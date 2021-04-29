@@ -6,6 +6,6 @@ Trying to work through some ideas for the app. Plan on including structure / pla
 
 - Moon phase API
 - Tide / Currents API
-- Abient music API
+- Abient music API - use Bandcamp or Spotify API to pull music tagged as ambient and randomly generate. "Study Music"
 - Concerts near you
 - Music producers API
