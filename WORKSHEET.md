@@ -7,15 +7,38 @@
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+Forget Me Not is a database of plants! Discover interesting plant species from around the world or search for information on specific plant types.
 
 ## API
 
-Use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project. 
+I am choosing to work with the Trefle API for my app.
 
 
 ```
-{data: {} }
+{
+"data": [
+{
+"id": 14887,
+"name": "Aa",
+"slug": "aa",
+"links": {
+"self": "/api/v1/genus/aa",
+"plants": "/api/v1/genus/aa/plants",
+"species": "/api/v1/genus/aa/species",
+"family": "/api/v1/families/orchidaceae"
+},
+"family": {
+"id": 32,
+"name": "Orchidaceae",
+"common_name": null,
+"slug": "orchidaceae",
+"links": {
+"self": "/api/v1/families/orchidaceae",
+"division_order": "/api/v1/division_orders/orchidales",
+"genus": "/api/v1/families/orchidaceae/genus"
+}
+}
+},
 ```
 
 
