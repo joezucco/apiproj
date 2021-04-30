@@ -9,6 +9,8 @@
 
 Forget Me Not is a database of plants! Discover interesting plant species from around the world or search for information on specific plant types.
 
+I want this app to be a simple, straightforward and aesthetically pleasing display of data. It will be functional with either the use of a randomizer button to display random plants or a search bar to take zip code or town name to find local plant species.
+
 ## API
 
 I am choosing to work with the Trefle API for my app.
@@ -44,24 +46,27 @@ I am choosing to work with the Trefle API for my app.
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [add link to your wireframes]()
-- [add link to your react architecture]()
+- [Desktop/Mobile Wireframes](https://res.cloudinary.com/dnfumu7j3/image/upload/v1619797786/fmn_wire_bkuupe.png)
+- [React Architecture](https://res.cloudinary.com/dnfumu7j3/image/upload/v1619806112/IMG-7712_mpoqhw.jpg)
 
 
 ### MVP/PostMVP - 5min
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-#### MVP EXAMPLE
+#### MVP 
 - Find and use external api 
 - Render data on page 
 - Allow user to interact with the page
+- Have functional search and/or button component
+- Design cards for plant data
 
-#### PostMVP EXAMPLE
+#### PostMVP 
 
-- Add localStorage or firebase for storage
+- Implement Bootstrap or Bulma styling components
+- Logo
+- 
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
@@ -71,20 +76,19 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Component | Description | 
 | --- | :---: |  
 | App | This will make the initial data pull and include React Router| 
-| Header | This will render the header include the nav | 
-| Footer | This will render the header include the nav | 
+| Header | This will render the header and include the nav | 
+| Footer | Basic footer containing copyright info. Maybe a contact link. |
+| Nav | Basic nav componenent containing logo + about + name of app |
+| About | Will be routed from Main and re-render.   |
+| Card | This will render plant data | 
 
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
+## Time Frames
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+[Link to Google Sheets Time Frame](https://docs.google.com/spreadsheets/d/1VpmWz1Mlbrhy5QuPG1OTW3FLBZhMeWndJK6d2XJGdIY/edit?usp=sharing)
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
+ I may implement React Media to allow media query capabilities for responsive design. Bulma or Reactstrap are potential Post-MVP options for my styling
 
 ## Code Snippet
 
