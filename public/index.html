@@ -39,5 +39,16 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+      <script>
+      fetch("https://cat-fact.herokuapp.com/facts")
+      .then (response => response.json()
+      .then (data => {
+        console.log(data)
+      }))
+      </script>
+
+
+
+
   </body>
 </html>

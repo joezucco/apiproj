@@ -1,16 +1,33 @@
-import './App.css';
+import { Route, Switch } from "react-router-dom";
+import { useState } from "react";
+import "./App.css";
+
+import Header from "./components/Header";
+import About from "./components/About";
+import Home from "./components/Home";
+import Button from "./components/Button"
+import Footer from "./components/Footer"
+
 
 function App() {
-
-//making API call
-  
-  // const apiKey = "ea594e0d14f44a68a6724033213004";
 
 
 
   return (
     <div className="App">
-      <p>Hello World</p>
+      <Header />
+      <main>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+            <Button />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+        </Switch>
+        <Footer />
+      </main>
     </div>
   );
 }

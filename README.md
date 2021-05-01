@@ -66,7 +66,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 - Implement Bootstrap or Bulma styling components
 - Logo
-- 
+- Implement second API for photos
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
