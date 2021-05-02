@@ -7,13 +7,13 @@
 
 ## Project Description
 
-Forget Me Not is a database of plants! Discover interesting plant species from around the world or search for information on specific plant types.
+Forget Me Not is a database of plants! Discover interesting plant species from around the world or search for information regarding specific plant types.
 
 I want this app to be a simple, straightforward and aesthetically pleasing display of data. It will be functional with either the use of a randomizer button to display random plants or a search bar to take zip code or town name to find local plant species.
 
 ## API
 
-I am choosing to work with the Trefle API for my app.
+I am choosing to work with the Trefle API for my app. It contains botanical data.
 
 
 ```

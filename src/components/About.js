@@ -1,5 +1,14 @@
 const About = (props) => {
-    return <h2>About</h2>
+    return (
+    <div>
+      <h2>About</h2>
+      <p>
+        Forget Me Not is a database of plants! Discover interesting plant
+        species from around the world or search for information regarding
+        specific plant types.
+      </p>
+        </div>
+    )
 }
 
 export default About
