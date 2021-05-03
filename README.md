@@ -7,13 +7,13 @@
 
 ## Project Description
 
-Forget Me Not is a database of plants! Discover interesting plant species from around the world or search for information regarding specific plant types.
+Catfaxt is a resource for (relatively) true information on cats.
 
-I want this app to be a simple, straightforward and aesthetically pleasing display of data. It will be functional with either the use of a randomizer button to display random plants or a search bar to take zip code or town name to find local plant species.
+I want this app to be a simple, straightforward and aesthetically pleasing display of data. It will be functional with either the use of a randomizer button to display random cat facts.
 
 ## API
 
-I am choosing to work with the Trefle API for my app. It contains botanical data.
+I am choosing to work with the Cat Facts API for my app. It contains cat data.
 
 
 ```

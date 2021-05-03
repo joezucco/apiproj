@@ -1,11 +1,14 @@
 const Fact = (props) => {
+
+    
+    
     return (
         <div>
             
             {props.catFacts.map((fact, index) => {
-                return <h2>{fact.text}</h2>
+                return <p>{fact.text}</p>
             })}
-        <button>Grow!</button>
+            {/* <input type='submit' value='meow' /> */}
       </div>
     );
 }
