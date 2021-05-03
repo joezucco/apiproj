@@ -1,14 +1,10 @@
 const About = (props) => {
-    return (
+  return (
     <div>
       <h2>About</h2>
-      <p>
-        Forget Me Not is a database of plants! Discover interesting plant
-        species from around the world or search for information regarding
-        specific plant types.
-      </p>
-        </div>
-    )
-}
+      <p>Catfax is simply a button that generates random cat facts</p>
+    </div>
+  );
+};
 
-export default About
+export default About;

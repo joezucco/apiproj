@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom"
-import Plant from "./Plant"
+import Fact from "./Fact"
 
 const Home = (props) => {
+
+    console.log(props.catFacts)
     return (
     <div>
         <h2>Home</h2>
-        <Plant />
+            <Fact catFacts={props.catFacts}/>
         </div>
     )
 }

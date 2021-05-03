@@ -1,29 +1,29 @@
 import { Route, Switch } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 
 import Header from "./components/Header";
 import About from "./components/About";
 import Home from "./components/Home";
 import Footer from "./components/Footer"
-import Plant from "./components/Plant";
+import Fact from "./components/Fact";
 
 
 function App() {
 
-//  const apiKey = "Lscpny7Db7m8VKIRmvuWln_plcl53QP3nflws5Z0MLs";
-// const page = Math.floor(Math.random() * 1000 + 1);
-// const id = Math.floor(Math.random() * 1000 + 1);
-// const url = `https://trefle.io/api/v1/plants?token=${apiKey}&page=${page}`;
-// const proxyUrl = "https://shielded-sea-45679.herokuapp.com/";
-
-//   const [plant, getPlant] = useState([])
+  const url =
+    "https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=100";
+  const [catFacts, setCatFacts] = useState([])
   
-//   const getPlantInfo = async () => {
-//     const response = await fetch(proxyUrl + url)
-//     const data = await response.json()
-//     console.log(data)
-//   }
+  const getCatFacts = async () => {
+    const response = await fetch(url)
+    const data = await response.json()
+    setCatFacts(data)
+  }
+
+  useEffect(() => {getCatFacts()}, []) 
+
+
   
   return (
     <div className="App">
@@ -31,7 +31,7 @@ function App() {
       <main>
         <Switch>
           <Route exact path="/">
-            <Home />
+            <Home catFacts={catFacts} />
           </Route>
           <Route path="/about">
             <About />
