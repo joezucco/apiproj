@@ -12,7 +12,7 @@ import Fact from "./components/Fact";
 function App() {
 
   const url =
-    "https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=500";
+    "https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=200";
   const [catFacts, setCatFacts] = useState([])
   
   const getCatFacts = async () => {
@@ -27,7 +27,13 @@ function App() {
   
   return (
     <div className="App">
-      <Header />
+      <section className="hero">
+        <div className="hero-body">
+          <div className="container">
+            <Header />
+          </div>
+        </div>
+      </section>
       <main>
         <Switch>
           <Route exact path="/">

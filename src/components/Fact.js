@@ -1,22 +1,34 @@
+import { useState } from "react";
+
 const Fact = (props) => {
+  console.log(props);
+  const [num, setNum] = useState(0);
 
-    // const test = props[0]
+  const handleClick = () => {
+    let newNum = num++;
+    setNum(newNum);
+  };
 
-    const handleClick = () => {
-        console.log("testing", props[0])
-    }
-
+  const loaded = () => {
     return (
       <div>
-        <input onClick={() => handleClick()} type="submit" value="/ᐠ｡‸｡ᐟ\" />
-        {props.catFacts.map((fact, index) => {
-          return (
-            //   <h1>stuff</h1>
-            <p>{fact.text}</p>
-          );
-        })}
+        <input onClick={() => setNum(num + 1)} type="submit" value="/ᐠ｡‸｡ᐟ\" />
+
+        <p>{props.catFacts[num].text}</p>
       </div>
     );
-}
+  };
 
-export default Fact
+  const loading = () => {
+    return (
+      <>
+        <img className="dancer" src="/dancer.gif" alt="Dance" />
+        <h5>dancing...</h5>
+      </>
+    );
+  };
+
+  return props.catFacts[num] ? loaded() : loading();
+};
+
+export default Fact;
