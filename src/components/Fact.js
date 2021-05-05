@@ -1,4 +1,6 @@
 import { useState } from "react";
+import "bulma"
+import { Button } from "react-bulma-components";
 
 const Fact = (props) => {
   console.log(props);
@@ -12,8 +14,7 @@ const Fact = (props) => {
   const loaded = () => {
     return (
       <div>
-        <input onClick={() => setNum(num + 1)} type="submit" value="/ᐠ｡‸｡ᐟ\" />
-
+        <input className="button is-normal is-dark" onClick={() => setNum(num + 1)} type="submit" value="/ᐠ｡‸｡ᐟ\" />
         <p>{props.catFacts[num].text}</p>
       </div>
     );

@@ -27,13 +27,7 @@ function App() {
   
   return (
     <div className="App">
-      <section className="hero">
-        <div className="hero-body">
-          <div className="container">
             <Header />
-          </div>
-        </div>
-      </section>
       <main>
         <Switch>
           <Route exact path="/">
