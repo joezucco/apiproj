@@ -4,15 +4,16 @@ import "../App.css"
 
 const Header = (props) => {
   return (
-    <section class="hero is-primary is-fullheight">
-      <div class="hero-body">
-    {/* <nav className="header"> */}
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      {/* </nav> */ }
-  </div>
-    </section>
-  )
+    <nav className="navbar" role="navigation">
+      <div className="navbar-brand">
+        <a class="navbar-item" href=""
+        {/* <nav className="header"> */}
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        {/* </nav> */}
+      </div>
+    </nav>
+  );
 };
 
 export default Header;
