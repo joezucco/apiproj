@@ -3,6 +3,7 @@ import "bulma";
 import "../App.css";
 import {useState} from "react"
 
+
 const Header = (props) => {
 
 const [isActive, setisActive] = useState(false)
@@ -17,11 +18,11 @@ const [isActive, setisActive] = useState(false)
       aria-label="main navigation"
     >
       <div className="navbar-brand">
-        <a
+        <a id="header-logo"
           className="navbar-item"
           href="https://elated-galileo-2ab1e7.netlify.app/"
         >
-          <img src="/navlogo.png" width="128" />
+          <span><img src="/navlogo.png" alt="catlogo" /></span>
         </a>
         <a
           onClick={() => {

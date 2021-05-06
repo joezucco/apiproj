@@ -37,7 +37,7 @@
   }
 }
 
-
-.header {
-  background-color: forestgreen;
+.navbar {
+  display: flex;
+  background-color: forestgreen !important;
 }

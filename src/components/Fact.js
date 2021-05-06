@@ -14,8 +14,19 @@ const Fact = (props) => {
   const loaded = () => {
     return (
       <div>
-        <input className="button is-normal is-dark" onClick={() => setNum(num + 1)} type="submit" value="/ᐠ｡‸｡ᐟ\" />
-        <p>{props.catFacts[num].text}</p>
+        <input
+          className="button is-normal is-dark"
+          onClick={() => setNum(num + 1)}
+          type="submit"
+          value="/ᐠ｡‸｡ᐟ\"
+        />
+        <div class="card">
+          <div class="card-content">
+            <div class="content">
+              <p>{props.catFacts[num].text}</p>
+            </div>
+          </div>
+        </div>
       </div>
     );
   };
