@@ -3,7 +3,7 @@ import "./About.css"
 
 const About = (props) => {
   return (
-    <section class="section is-medium">
+    
       <div
         className="aboutbod"
         style={{
@@ -26,7 +26,7 @@ const About = (props) => {
         </div>
         <Footer className="foot" />
       </div>
-    </section>
+    
   );
 };
 
