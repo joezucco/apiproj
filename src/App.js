@@ -26,21 +26,22 @@ function App() {
   
   return (
     <div className="App">
-      <Header />
+      <div className="site">
+        <Header />
 
-      <main>
-        <Switch>
-          <Route exact path="/">
- 
+        <main className="site">
+          <Switch>
+            <Route exact path="/">
               <Home catFacts={catFacts} />
-
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-        </Switch>
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+          </Switch>
+        </main>
         
-      </main>
+        
+      </div>
     </div>
   );
 }

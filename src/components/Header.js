@@ -21,7 +21,8 @@ const [isActive, setisActive] = useState(false)
       data-target="navMenu"
       aria-label="main navigation"
     >
-      <div className="navbar-brand" >
+      <div className="navbar-brand"
+      >
         
         <a
           id="header-logo"
@@ -29,7 +30,8 @@ const [isActive, setisActive] = useState(false)
           href="/"
         >
           <span>
-            <img src="navlogo.png" alt="logo6" style={{maxHeight: "70px"}} />
+            <img src="navlogo.png" alt="logo6" style={{maxHeight: "70px",
+            }} />
             {/* <Logo /> */}
             
           </span>
@@ -39,7 +41,8 @@ const [isActive, setisActive] = useState(false)
             setisActive(!isActive);
           }}
           role="button"
-          className={`navbar-burger burger ${isActive ? "is-active" : ""}`}
+          className={`navbar-burger  ${isActive ? "is-active" : ""}`}
+          style={{ marginTop: "20px" }}
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarBasicExample"
@@ -52,7 +55,7 @@ const [isActive, setisActive] = useState(false)
           id="navbarBasicExample"
           className={`navbar-menu ${isActive ? "is-active" : ""}`}
         >
-          <div className="navbar-end">
+          <div className="navbar">
             <a className="navbar-item">
               <Link to="/">Home</Link>
             </a>
@@ -62,21 +65,6 @@ const [isActive, setisActive] = useState(false)
           </div>
         </div>
       </div>
-      {/* <nav className="header"> */}
-      {/* <div
-        id="navbarBasicExample"
-        className={`navbar-menu ${isActive ? "is-active" : ""}`}
-      >
-        <div className="navbar-start">
-          <a className="navbar-item">
-            <Link to="/">Home</Link>
-          </a>
-          <a className="navbar-item">
-            <Link to="/about">About</Link>
-          </a>
-        </div>
-      </div> */}
-      {/* </nav> */}
     </nav>
   );
 };

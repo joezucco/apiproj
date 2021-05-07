@@ -1,10 +1,24 @@
-/* #bod {
-    background-color: red;
-} */
-
-#factbod {
-    
-    width: 300px;
-    
+#bod {
+  /* min-height: 100vh; */
+  height:100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+#factbod {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.section {
+    /* background-color:red; */
+    margin:auto;
+} 
+
+.foot {
+  /* margin-auto:100%; */
+  margin-top: auto;
+  position:absolute;
+}

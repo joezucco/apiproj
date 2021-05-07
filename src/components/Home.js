@@ -1,6 +1,6 @@
 import Fact from "./Fact";
 import Footer from "./Footer"
-import "./Home.css"
+import "./Home.css";
 
 const Home = (props) => {
   console.log(props.catFacts);
@@ -15,15 +15,12 @@ const Home = (props) => {
         }}
       >
         <section className="section">
-          <div id="factbod" style={{ margin: "auto" }}>
+          <div id="factbod" >
             <Fact catFacts={props.catFacts} />
           </div>
         </section>
       </div>
-
-      <div>
-        <Footer />
-      </div>
+      <Footer className="foot" />
     </>
   );
 };
