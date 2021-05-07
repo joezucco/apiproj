@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import "bulma";
 import "../App.css";
-import {useState} from "react"
+import { useState } from "react"
+// import Logo from "./Logo"
+// import Logo, { ReactComponent as Logo } from './Logo'
+
+
 
 
 const Header = (props) => {
@@ -18,11 +22,16 @@ const [isActive, setisActive] = useState(false)
       aria-label="main navigation"
     >
       <div className="navbar-brand">
-        <a id="header-logo"
+        <a
+          id="header-logo"
           className="navbar-item"
-          href="https://elated-galileo-2ab1e7.netlify.app/"
+          href="/"
         >
-          <span><img src="/navlogo.png" alt="catlogo" /></span>
+          <span>
+            <img src="navlogo.png" alt="logo6" style={{maxHeight: "70px"}} />
+            {/* <Logo /> */}
+            
+          </span>
         </a>
         <a
           onClick={() => {
@@ -38,9 +47,22 @@ const [isActive, setisActive] = useState(false)
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
+        <div
+          id="navbarBasicExample"
+          className={`navbar-menu ${isActive ? "is-active" : ""}`}
+        >
+          <div className="navbar-start">
+            <a className="navbar-item">
+              <Link to="/">Home</Link>
+            </a>
+            <a className="navbar-item">
+              <Link to="/about">About</Link>
+            </a>
+          </div>
+        </div>
       </div>
       {/* <nav className="header"> */}
-      <div
+      {/* <div
         id="navbarBasicExample"
         className={`navbar-menu ${isActive ? "is-active" : ""}`}
       >
@@ -52,7 +74,7 @@ const [isActive, setisActive] = useState(false)
             <Link to="/about">About</Link>
           </a>
         </div>
-      </div>
+      </div> */}
       {/* </nav> */}
     </nav>
   );

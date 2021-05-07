@@ -14,5 +14,5 @@ Trying to work through some ideas for the app. I plan on including structure / p
 -Easy APIs
 -Weather
 
--Treffle plant API
+-Trefle plant API
 -Forget Me Not / Plantbase
