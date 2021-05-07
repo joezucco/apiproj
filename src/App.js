@@ -1,6 +1,7 @@
 import { Route, Switch } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./App.css";
+import "./components/About"
 
 import Header from "./components/Header";
 import About from "./components/About";
@@ -39,8 +40,8 @@ function App() {
             </Route>
           </Switch>
         </main>
-        
-        
+
+        {/* <Footer className="foot" /> */}
       </div>
     </div>
   );
