@@ -56,8 +56,8 @@ const [isActive, setisActive] = useState(false)
           className={`navbar-menu ${isActive ? "is-active" : ""}`}
         >
           <div className="navbar">
-            <a className="navbar-item">
-              <Link to="/">Home</Link>
+            <a className="navbar-item is-link">
+              <Link  to="/">Home</Link>
             </a>
             <a className="navbar-item">
               <Link to="/about">About</Link>
