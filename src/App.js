@@ -11,7 +11,7 @@ import Footer from "./components/Footer"
 function App() {
 
   const url =
-    "https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=200";
+    "https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=300";
   const [catFacts, setCatFacts] = useState([])
   
   const getCatFacts = async () => {
@@ -26,19 +26,20 @@ function App() {
   
   return (
     <div className="App">
-
-          <Header />
+      <Header />
 
       <main>
         <Switch>
           <Route exact path="/">
-            <Home catFacts={catFacts} />
+            <div id="wrapper">
+              <Home catFacts={catFacts} />
+            </div>
           </Route>
           <Route path="/about">
             <About />
           </Route>
         </Switch>
-        <Footer />
+        
       </main>
     </div>
   );

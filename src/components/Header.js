@@ -21,7 +21,8 @@ const [isActive, setisActive] = useState(false)
       data-target="navMenu"
       aria-label="main navigation"
     >
-      <div className="navbar-brand">
+      <div className="navbar-brand" >
+        
         <a
           id="header-logo"
           className="navbar-item"
@@ -51,7 +52,7 @@ const [isActive, setisActive] = useState(false)
           id="navbarBasicExample"
           className={`navbar-menu ${isActive ? "is-active" : ""}`}
         >
-          <div className="navbar-start">
+          <div className="navbar-end">
             <a className="navbar-item">
               <Link to="/">Home</Link>
             </a>
