@@ -1,13 +1,11 @@
 import { Route, Switch } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./App.css";
-import "./main.scss"
 
 import Header from "./components/Header";
 import About from "./components/About";
 import Home from "./components/Home";
 import Footer from "./components/Footer"
-import Fact from "./components/Fact";
 
 
 function App() {

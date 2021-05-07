@@ -15,7 +15,7 @@ const Fact = (props) => {
     return (
       <div>
         <input
-          className="button is-normal is-dark"
+          className="button is-primary is-focused"
           onClick={() => setNum(num + 1)}
           type="submit"
           value="/ᐠ｡‸｡ᐟ\"
