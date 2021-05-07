@@ -5,18 +5,26 @@ import "./Home.css"
 const Home = (props) => {
   console.log(props.catFacts);
   return (
-    <section className="section">
-      <div className="container">
-        <div className="columns is-centered">
-          <div className="column is-8">
+    <>
+      <div
+        id="bod"
+        style={{
+          background: "rgb(255,152,93)",
+          background:
+            "radial-gradient(circle, rgba(251,129,34,1) 0%, rgba(200,140,170,1) 100%)",
+        }}
+      >
+        <section className="section">
+          <div id="factbod" style={{ margin: "auto" }}>
             <Fact catFacts={props.catFacts} />
           </div>
-        </div>
+        </section>
       </div>
-      <div id="wrapper">
+
+      <div>
         <Footer />
       </div>
-    </section>
+    </>
   );
 };
 

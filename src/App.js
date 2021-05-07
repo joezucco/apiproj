@@ -31,9 +31,9 @@ function App() {
       <main>
         <Switch>
           <Route exact path="/">
-            <div id="wrapper">
+ 
               <Home catFacts={catFacts} />
-            </div>
+
           </Route>
           <Route path="/about">
             <About />

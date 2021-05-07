@@ -40,8 +40,8 @@ const Fact = (props) => {
     return (
       <>
         <img className="dancer" src="/dancer.gif" alt="Dance" />
-        <h6 style={{color:"darkgrey", fontSize:"14px"}}>...dancing...</h6>
-        <h6 style={{fontStyle:"italic", fontSize:"7px"}}>(loading)</h6>
+        <h6 style={{color:"white", fontSize:"14px"}}>...dancing...</h6>
+        <h6 style={{color:"white", fontStyle:"italic", fontSize:"8px"}}>(loading)</h6>
       </>
     );
   };

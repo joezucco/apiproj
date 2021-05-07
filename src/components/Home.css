@@ -1,9 +1,10 @@
-section {
-    display:flex;
-    min-height:100vh;
-    flex-direction: column;
+/* #bod {
+    background-color: red;
+} */
+
+#factbod {
+    
+    width: 300px;
+    
 }
 
-#wrapper {
-    flex: 1;
-}
