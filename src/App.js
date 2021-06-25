@@ -6,13 +6,11 @@ import "./components/About"
 import Header from "./components/Header";
 import About from "./components/About";
 import Home from "./components/Home";
-import Footer from "./components/Footer"
-
 
 function App() {
 
   const url =
-    "https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=100";
+    "https://enigmatic-brushlands-12218.herokuapp.com/https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=100";
   const [catFacts, setCatFacts] = useState([])
   
   const getCatFacts = async () => {
@@ -23,13 +21,10 @@ function App() {
 
   useEffect(() => {getCatFacts()}, []) 
 
-
-  
   return (
     <div className="App">
       <div className="site">
         <Header />
-
         <main className="site">
           <Switch>
             <Route exact path="/">
@@ -40,8 +35,6 @@ function App() {
             </Route>
           </Switch>
         </main>
-
-        {/* <Footer className="foot" /> */}
       </div>
     </div>
   );

@@ -3,13 +3,11 @@ import "./About.css"
 
 const About = (props) => {
   return (
-    
       <div
         className="aboutbod"
         style={{
           background: "rgb(255,152,93)",
-          background:
-            "radial-gradient(circle, rgba(251,129,34,1) 0%, rgba(200,140,170,1) 100%)",
+          background: "radial-gradient(circle, rgba(251,129,34,1) 0%, rgba(200,140,170,1) 100%)",
         }}
       >
         <div
@@ -26,7 +24,6 @@ const About = (props) => {
         </div>
         <Footer className="foot" />
       </div>
-    
   );
 };
 

@@ -2,16 +2,10 @@ import { Link } from "react-router-dom";
 import "bulma";
 import "../App.css";
 import { useState } from "react"
-// import Logo from "./Logo"
-// import Logo, { ReactComponent as Logo } from './Logo'
-
-
-
 
 const Header = (props) => {
 
 const [isActive, setisActive] = useState(false)
-
 
   return (
     <nav
@@ -23,7 +17,6 @@ const [isActive, setisActive] = useState(false)
     >
       <div className="navbar-brand"
       >
-        
         <a
           id="header-logo"
           className="navbar-item"
@@ -32,8 +25,6 @@ const [isActive, setisActive] = useState(false)
           <span>
             <img src="navlogo.png" alt="logo6" style={{maxHeight: "70px",
             }} />
-            {/* <Logo /> */}
-            
           </span>
         </a>
         <a
