@@ -12,7 +12,7 @@ import Footer from "./components/Footer"
 function App() {
 
   const url =
-    "https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=300";
+    "https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=100";
   const [catFacts, setCatFacts] = useState([])
   
   const getCatFacts = async () => {

@@ -16,3 +16,9 @@ Trying to work through some ideas for the app. I plan on including structure / p
 
 -Trefle plant API
 -Forget Me Not / Plantbase
+
+
+
+## Next Steps
+- Add donate to ASPCA button
+- Fix about page positioning/flexbox
