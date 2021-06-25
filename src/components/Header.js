@@ -10,7 +10,7 @@ const [isActive, setisActive] = useState(false)
   return (
     <nav
       className="navbar"
-      className="is-active"
+      isActive={isActive}
       role="navigation"
       data-target="navMenu"
       aria-label="main navigation"
@@ -27,15 +27,11 @@ const [isActive, setisActive] = useState(false)
             }} />
           </span>
         </a>
-        <a
-          onClick={() => {
-            setisActive(!isActive);
-          }}
+        <a href="/"
+          onClick={() => {setisActive(!isActive);}}
           role="button"
           className={`navbar-burger  ${isActive ? "is-active" : ""}`}
           style={{ marginTop: "20px" }}
-          aria-label="menu"
-          aria-expanded="false"
           data-target="navbarBasicExample"
         >
           <span aria-hidden="true"></span>

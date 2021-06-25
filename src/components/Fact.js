@@ -11,19 +11,19 @@ const Fact = (props) => {
 
   const loaded = () => {
     return (
-      <section class="section is-medium">
-        <div class="rows">
-          <div class="row is-full">
-            <div class="card is-fullheight" style={{ maxWidth: "100%" }}>
-              <div class="card-content">
-                <div class="content">
+      <section classNamne="section is-medium">
+        <div className="rows">
+          <div className="row is-full">
+            <div className="card is-fullheight" style={{ maxWidth: "100%" }}>
+              <div className="card-content">
+                <div className="content">
                   <p>{props.catFacts[num].text}</p> 
                 </div>
               </div>
             </div>
           </div>
           <br></br>
-          <div class="row is-full">
+          <div className="row is-full">
             <input
               className="button has-background-light "
               onClick={() => setNum(num + 1)}

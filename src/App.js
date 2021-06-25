@@ -10,7 +10,7 @@ import Home from "./components/Home";
 function App() {
 
   const url =
-    "https://enigmatic-brushlands-12218.herokuapp.com/https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=100";
+    "https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=300";
   const [catFacts, setCatFacts] = useState([])
   
   const getCatFacts = async () => {
